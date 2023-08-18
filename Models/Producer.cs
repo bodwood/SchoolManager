@@ -19,5 +19,9 @@ namespace SchoolManagerProject.Models
   public string LastName { get; set; }
 
   public string Bio { get; set; }
+
+  //Relationships
+  //A producer can have many movies.
+  public List<Movie> Movies { get; set; }
  }
 }

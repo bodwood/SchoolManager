@@ -17,5 +17,10 @@ namespace SchoolManagerProject.Models
   public string Name { get; set; }
 
   public string Bio { get; set; }
+
+  //Relationships
+  //A Cinema can have many movies.
+  public List<Movie> Movies { get; set; }
+
  }
 }

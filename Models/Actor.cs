@@ -19,5 +19,8 @@ namespace SchoolManagerProject.Models
   public string LastName { get; set; }
 
   public string Bio { get; set; }
+
+ //Relationships
+  public List<Actor_Movie> Actors_Movies { get; set; }
  }
 }
