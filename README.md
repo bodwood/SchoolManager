@@ -1,11 +1,11 @@
 # School Manager
-![School Bus](https://github.com/bodwood/SchoolManager/blob/master/wwwroot/images/school-bus.png)
-![School](https://github.com/bodwood/SchoolManager/blob/master/wwwroot/images/school.png)
-![Pencil](https://github.com/bodwood/SchoolManager/blob/master/wwwroot/images/pencil.png)
 
-#### By Bodie Wood
+| ![Pencil](https://github.com/bodwood/SchoolManager/blob/master/wwwroot/images/pencil.png) | By Bodie Wood 👨🏼‍💻 |
+| --- | --- |
 
-## Technologies Used
+#### By Bodie Wood 👨🏼‍💻
+
+## Technologies Used 
 
 - C#
 - .NET 6
@@ -24,7 +24,7 @@
 
 A web application for ordering movie tickets and managing movie related content. Users can browse and purchase movie tickets, while managers have full CRUD access to manage Orders, Cinema, Movie, Actor, and Producer data. Users can choose to register for an account if they would like to order movie tickets. 
 
-## Setup/Installation Requirements
+## Setup/Installation Requirements 🛠️
 
 * Clone repository to your desktop:
   1. GIT must be installed to clone repository. If GIT is needed, click here: [Install Git](https://docs.github.com/en/get-started/quickstart/set-up-git)
@@ -68,14 +68,14 @@ A web application for ordering movie tickets and managing movie related content.
 
 - Navigate to [http://localhost:5000](http://localhost:5000) to try application
 
-## Known Bugs
+## Known Bugs 🪲
 
 * _No known bugs_
 
 ## Entity Relationship Schema
 ![ER Schema](https://github.com/bodwood/SchoolManager/blob/master/wwwroot/images/ER-Schema.png)
 
-## License
+## License ✅
 
 **MIT License**
 
