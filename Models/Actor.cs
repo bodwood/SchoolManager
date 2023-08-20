@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace SchoolManagerProject.Models
 {
- public class Actor
- {
-  //unique id for each teacher
-  [Key]
-  public int ActorId { get; set; }
-  
-  public string ProfilePicture { get; set; }
+    public class Actor
+    {
+        //unique id for each teacher
+        [Key]
+        public int ActorId { get; set; }
 
-  public string FirstName { get; set; }
+        public string ProfilePicture { get; set; }
 
-  public string LastName { get; set; }
+        public string FirstName { get; set; }
 
-  public string Bio { get; set; }
+        public string LastName { get; set; }
 
- //Relationships
-  public List<Actor_Movie> Actors_Movies { get; set; }
- }
+        public string Bio { get; set; }
+
+        //Relationships
+        public List<Actor_Movie> Actors_Movies { get; set; }
+    }
 }

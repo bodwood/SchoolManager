@@ -8,37 +8,39 @@ using SchoolManagerProject.Data;
 
 namespace SchoolManagerProject.Models
 {
- public class Movie
- {
-  //unique id for each teacher
-  [Key]
-  public int MovieId { get; set; }
+    public class Movie
+    {
+        //unique id for each teacher
+        [Key]
+        public int MovieId { get; set; }
 
-  public string Name { get; set; }
+        public string Name { get; set; }
 
-  public string Description { get; set; }
+        public string Description { get; set; }
 
-  public double Price { get; set; }
+        public double Price { get; set; }
 
-  public string ImageURL { get; set; }
+        public string ImageURL { get; set; }
 
-  public DateTime StartDate { get; set; }
+        public DateTime StartDate { get; set; }
 
-  public DateTime EndDate { get; set; }
+        public DateTime EndDate { get; set; }
 
-  public MovieCategory MovieCategory { get; set; }
+        public MovieCategory MovieCategory { get; set; }
 
-  //Relationships
-  public List<Actor_Movie> Actors_Movies { get; set; }
+        //Relationships
+        public List<Actor_Movie> Actors_Movies { get; set; }
 
-  //Cinema
-  public int CinemaId { get; set; }
-  [ForeignKey("CinemaId")]
-  public Cinema Cinema { get; set; }
+        //Cinema
+        public int CinemaId { get; set; }
 
-  //Producer
-  public int ProducerId { get; set; }
-  [ForeignKey("ProducerId")]
-  public Producer Producer { get; set; }
- }
+        [ForeignKey("CinemaId")]
+        public Cinema Cinema { get; set; }
+
+        //Producer
+        public int ProducerId { get; set; }
+
+        [ForeignKey("ProducerId")]
+        public Producer Producer { get; set; }
+    }
 }

@@ -9,13 +9,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+//Configure the database connection.
 builder.Services.AddDbContext<AppDbContext>(
-                  dbContextOptions => dbContextOptions
-                    .UseMySql(
-                      builder.Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(builder.Configuration["ConnectionStrings:DefaultConnection"]
-                    )
-                  )
-                );
+    dbContextOptions =>
+        dbContextOptions.UseMySql(
+            builder.Configuration["ConnectionStrings:DefaultConnection"],
+            ServerVersion.AutoDetect(builder.Configuration["ConnectionStrings:DefaultConnection"])
+        )
+);
 
 var app = builder.Build();
 
@@ -34,8 +35,9 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
+
+//Grabs the seed data from the AppDbInitializer class.
+AppDbInitializer.Seed(app);
 
 app.Run();
