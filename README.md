@@ -1,3 +1,3 @@
 School Manager
 
-![ER Schema](~/images/ER-Schema.png)
+![ER Schema](https://github.com/bodwood/SchoolManager/blob/master/wwwroot/images/ER-Schema.png)
