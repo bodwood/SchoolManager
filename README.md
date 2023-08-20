@@ -1,13 +1,12 @@
 # School Manager
-
-| ![Pencil](https://github.com/bodwood/SchoolManager/blob/master/wwwroot/images/pencil.png) | By Bodie Wood 👨🏼‍💻 |
-| --- | --- |
+| ![Pencil](https://github.com/bodwood/SchoolManager/blob/master/wwwroot/images/pencil.png) | ![School](https://github.com/bodwood/SchoolManager/blob/master/wwwroot/images/school.png) | ![School Bus](https://github.com/bodwood/SchoolManager/blob/master/wwwroot/images/school-bus.png)
+| --- | --- | --- |
 
 #### By Bodie Wood 👨🏼‍💻
 
 ## Technologies Used 
 
-- C#
+- C# 
 - .NET 6
 - ASP.NET Core MVC
 - Entity Framework Core 6
@@ -20,7 +19,7 @@
 - HTML
 - CSS
 
-## Description
+## Description 🔎
 
 A web application for ordering movie tickets and managing movie related content. Users can browse and purchase movie tickets, while managers have full CRUD access to manage Orders, Cinema, Movie, Actor, and Producer data. Users can choose to register for an account if they would like to order movie tickets. 
 
