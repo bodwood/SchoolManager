@@ -12,12 +12,16 @@ namespace SchoolManagerProject.Models
         [Key]
         public int ActorId { get; set; }
 
+        [Display(Name = "Profile Picture")]
         public string ProfilePicture { get; set; }
 
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
 
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
+        [Display(Name = "Biography")]
         public string Bio { get; set; }
 
         //Relationships
