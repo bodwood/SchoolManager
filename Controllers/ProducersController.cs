@@ -19,10 +19,11 @@ namespace MovieApp.Controllers
             _context = context;
         }
 
+        //IActionResult indicates that the method returns a result that is used to render the HTML view.
         public async Task<IActionResult> Index()
         {
             var allProducers = await _context.Producers.ToListAsync();
-            return View();
+            return View(allProducers);
         }
     }
 }
