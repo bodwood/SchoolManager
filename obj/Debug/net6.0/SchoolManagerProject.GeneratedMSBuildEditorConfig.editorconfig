@@ -8,49 +8,53 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SchoolManagerProject
 build_property.RootNamespace = SchoolManagerProject
-build_property.ProjectDir = /Users/bodie1/Desktop/SchoolManagerProject/
+build_property.ProjectDir = /Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/bodie1/Desktop/SchoolManagerProject
+build_property.MSBuildProjectDirectory = /Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/bodie1/Desktop/SchoolManagerProject/Views/Actors/Create.cshtml]
+[/Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/Views/Actors/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWN0b3JzL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bodie1/Desktop/SchoolManagerProject/Views/Actors/Index.cshtml]
+[/Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/Views/Actors/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWN0b3JzL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/Views/Actors/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWN0b3JzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bodie1/Desktop/SchoolManagerProject/Views/Cinemas/Index.cshtml]
+[/Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/Views/Cinemas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2luZW1hcy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bodie1/Desktop/SchoolManagerProject/Views/Movies/index.cshtml]
+[/Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/Views/Movies/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWVzL2luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bodie1/Desktop/SchoolManagerProject/Views/Producers/Index.cshtml]
+[/Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/Views/Producers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjZXJzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bodie1/Desktop/SchoolManagerProject/Views/Shared/Error.cshtml]
+[/Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bodie1/Desktop/SchoolManagerProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bodie1/Desktop/SchoolManagerProject/Views/_ViewImports.cshtml]
+[/Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bodie1/Desktop/SchoolManagerProject/Views/_ViewStart.cshtml]
+[/Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bodie1/Desktop/SchoolManagerProject/Views/Shared/_Layout.cshtml]
+[/Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-1zgshh25a3

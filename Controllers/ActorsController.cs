@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SchoolManagerProject.Data;
 using SchoolManagerProject.Data.Services;
+using SchoolManagerProject.Models;
 
 namespace SchoolManagerProject.Controllers
 {
@@ -19,7 +20,7 @@ namespace SchoolManagerProject.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var data = await _service.GetAll();
+            var data = await _service.GetAllAsync();
             return View(data);
         }
 
@@ -27,6 +28,33 @@ namespace SchoolManagerProject.Controllers
         public IActionResult Create()
         {
             return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(
+            [Bind("FirstName, LastName, ProfilePicture, Bio")] Actor actor
+        )
+        {
+            //Return view with model state errors if model state is invalid.
+            if (!ModelState.IsValid)
+            {
+                return View(actor);
+            }
+            //Add actor to database and redirect to index.
+            await _service.AddAsync(actor);
+            return RedirectToAction(nameof(Index));
+        }
+
+        //Get: Actors/Details/{id}
+        public async Task<IActionResult> Details(int id)
+        {
+            var actorDetails = await _service.GetByIdAsync(id);
+
+            if (actorDetails == null)
+            {
+                return View("Empty");
+            }
+            return View(actorDetails);
         }
     }
 }

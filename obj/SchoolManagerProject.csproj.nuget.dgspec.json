@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/bodie1/Desktop/SchoolManagerProject/SchoolManagerProject.csproj": {}
+    "/Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/SchoolManagerProject.csproj": {}
   },
   "projects": {
-    "/Users/bodie1/Desktop/SchoolManagerProject/SchoolManagerProject.csproj": {
+    "/Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/SchoolManagerProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/bodie1/Desktop/SchoolManagerProject/SchoolManagerProject.csproj",
+        "projectUniqueName": "/Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/SchoolManagerProject.csproj",
         "projectName": "SchoolManagerProject",
-        "projectPath": "/Users/bodie1/Desktop/SchoolManagerProject/SchoolManagerProject.csproj",
+        "projectPath": "/Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/SchoolManagerProject.csproj",
         "packagesPath": "/Users/bodie1/.nuget/packages/",
-        "outputPath": "/Users/bodie1/Desktop/SchoolManagerProject/obj/",
+        "outputPath": "/Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/bodie1/.nuget/NuGet/NuGet.Config"

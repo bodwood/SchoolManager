@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SoKCrQ/s/7VXIICtVaEHjs1WBqR9233Pnof0+eQk0igv3nY5pPb6S2vx4YWRN7jk+oImi/IbHEif9OzleRas8A==",
+  "dgSpecHash": "SvGuOWF9i4xM9yTamszSnJJsFj2HUv24EWMjnlVwgq2iUpUtd8EoKacQCdPJ/xP3vtIJRn+JerrjXB5f8wxU3g==",
   "success": true,
-  "projectFilePath": "/Users/bodie1/Desktop/SchoolManagerProject/SchoolManagerProject.csproj",
+  "projectFilePath": "/Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/SchoolManagerProject.csproj",
   "expectedPackageFiles": [
     "/Users/bodie1/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/bodie1/.nuget/packages/microsoft.entityframeworkcore/6.0.0/microsoft.entityframeworkcore.6.0.0.nupkg.sha512",

@@ -11,13 +11,13 @@ namespace SchoolManagerProject.Data.Services
     {
         //Get all data from database
         //IEnumerable allows us to iterate through the data.
-         Task<IEnumerable<Actor>> GetAll();
+        Task<IEnumerable<Actor>> GetAllAsync();
 
         //Get data by id from database
-        Actor GetById(int id);
+        Task<Actor> GetByIdAsync(int id);
 
         //Add data to database
-        void Add(Actor actor);
+        Task AddAsync(Actor actor);
 
         //Update data to database
         Actor Update(int id, Actor newActor);
