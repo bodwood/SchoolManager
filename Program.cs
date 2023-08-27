@@ -1,4 +1,5 @@
 using SchoolManagerProject.Data;
+using SchoolManagerProject.Data.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,6 +18,10 @@ builder.Services.AddDbContext<AppDbContext>(
             ServerVersion.AutoDetect(builder.Configuration["ConnectionStrings:DefaultConnection"])
         )
 );
+
+//Services Configuration (dependency injection)
+//Creates a new instance of the ActorsService class and adds it to the container.
+builder.Services.AddScoped<IActorsService, ActorsService>();
 
 var app = builder.Build();
 

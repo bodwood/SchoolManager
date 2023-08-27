@@ -10,6 +10,7 @@ namespace SchoolManagerProject.Data.Services
     public interface IActorsService
     {
         //Get all data from database
+        //IEnumerable allows us to iterate through the data.
          Task<IEnumerable<Actor>> GetAll();
 
         //Get data by id from database
