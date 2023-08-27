@@ -23,6 +23,6 @@ namespace SchoolManagerProject.Data.Services
         Task<Actor> UpdateAsync(int id, Actor newActor);
 
         //Delete data from database
-        void Delete(int id);
+        Task DeleteAsync(int id);
     }
 }

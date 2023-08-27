@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 
 namespace SchoolManagerProject.Data.Services
 {
@@ -22,9 +23,14 @@ namespace SchoolManagerProject.Data.Services
             await _context.SaveChangesAsync();
         }
 
-        public void Delete(int id)
+        public async Task DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            var actor = await _context.Actors.FirstOrDefaultAsync(n => n.ActorId == id);
+            if (actor != null)
+            {
+                _context.Actors.Remove(actor);
+                await _context.SaveChangesAsync();
+            }
         }
 
         public async Task<IEnumerable<Actor>> GetAllAsync()
@@ -54,7 +60,6 @@ namespace SchoolManagerProject.Data.Services
                 return result;
             }
             return null;
-            
         }
     }
 }
