@@ -1,21 +1,19 @@
 @model Actor
 
 @{
-ViewData["Title"] = "Create Actor";
+ViewData["Title"] = "Edit Actor";
 }
 
 <div class="row text">
  <div class="col-md-8 offset-2">
   <p>
-  <h4 class="text-center">Create a New Actor</h4>
+  <h4 class="text-center">Edit @Model.FirstName @Model.LastName</h4>
   </p>
   <div className="row">
    <div class="col-md-8 offset-2">
 
     <!--Form for creating a new actor.-->
-    <form asp-action="Create">
-     <div asp-validation-summary="ModelOnly" class="text-danger">
-     </div>
+    <form asp-action="Edit">
      <div class="form-group text-center">
       <img id="ProfilePicturePreview" class="border-info rounded-circle" style="max-width: 150px" />
      </div>
@@ -40,8 +38,8 @@ ViewData["Title"] = "Create Actor";
       <span asp-validation-for="Bio" class="text-danger"></span>
      </div>
      <div class="form-group">
-      <input type="submit" value="Create" class="btn btn-outline-success float-right" />
-      <a class="btn btn-outline-secondary" asp-action="Index">Go Back</a>
+      <input type="submit" value="Save" class="btn btn-outline-success float-right" asp-route-id="@Model.ActorId"/>
+      <a class="btn btn-outline-success float-right" asp-action="Index">Go Back</a>
      </div>
     </form>
 

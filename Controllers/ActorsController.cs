@@ -56,5 +56,33 @@ namespace SchoolManagerProject.Controllers
             }
             return View(actorDetails);
         }
+
+        //Get: Actors/Edit/{id}
+        public async Task<IActionResult> Edit(int id)
+        {
+            var actorDetails = await _service.GetByIdAsync(id);
+
+            if (actorDetails == null)
+            {
+                return View("Empty");
+            }
+            return View(actorDetails);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id, Actor actor)
+        {
+            //Return view with model state errors if model state is invalid.
+            if (!ModelState.IsValid)
+            {
+                return View(actor);
+            }
+            //Add actor to database and redirect to index.
+            await _service.UpdateAsync(id, actor);
+
+            //Return to details page.
+            var actorDetails = await _service.GetByIdAsync(id);
+            return RedirectToAction(nameof(Details), new { id = id });
+        }
     }
 }

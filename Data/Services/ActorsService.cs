@@ -39,9 +39,22 @@ namespace SchoolManagerProject.Data.Services
             return result;
         }
 
-        public Actor Update(int id, Actor newActor)
+        public async Task<Actor> UpdateAsync(int id, Actor updateActor)
         {
-            throw new NotImplementedException();
+            var result = await _context.Actors.FirstOrDefaultAsync(n => n.ActorId == id);
+
+            if (result != null)
+            {
+                result.FirstName = updateActor.FirstName;
+                result.LastName = updateActor.LastName;
+                result.ProfilePicture = updateActor.ProfilePicture;
+                result.Bio = updateActor.Bio;
+
+                await _context.SaveChangesAsync();
+                return result;
+            }
+            return null;
+            
         }
     }
 }

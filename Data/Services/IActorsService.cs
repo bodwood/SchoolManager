@@ -20,7 +20,7 @@ namespace SchoolManagerProject.Data.Services
         Task AddAsync(Actor actor);
 
         //Update data to database
-        Actor Update(int id, Actor newActor);
+        Task<Actor> UpdateAsync(int id, Actor newActor);
 
         //Delete data from database
         void Delete(int id);
