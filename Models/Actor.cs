@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using SchoolManagerProject.Data.Base;
 
 namespace SchoolManagerProject.Models
 {
-    public class Actor
+    public class Actor:IEntityBase
     {
         //unique id for each teacher
         [Key]
-        public int ActorId { get; set; }
+        public int Id { get; set; }
 
         [Display(Name = "Profile Picture")]
         [Required(ErrorMessage = "Profile Picture is required.")]

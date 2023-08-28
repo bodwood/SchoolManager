@@ -10,7 +10,7 @@ namespace SchoolManagerProject.Models
     {
         //unique id for each teacher
         [Key]
-        public int ProducerId { get; set; }
+        public int Id { get; set; }
 
         [Display(Name = "Profile Picture")]
         public string ProfilePicture { get; set; }

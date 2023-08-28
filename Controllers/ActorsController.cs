@@ -1,11 +1,11 @@
+using SchoolManagerProject.Data;
+using SchoolManagerProject.Data.Services;
+using SchoolManagerProject.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using SchoolManagerProject.Data;
-using SchoolManagerProject.Data.Services;
-using SchoolManagerProject.Models;
 
 namespace SchoolManagerProject.Controllers
 {
@@ -32,81 +32,66 @@ namespace SchoolManagerProject.Controllers
 
         [HttpPost]
         public async Task<IActionResult> Create(
-            [Bind("FirstName, LastName, ProfilePicture, Bio")] Actor actor
+            [Bind("FirstName, LastName,ProfilePicture,Bio")] Actor actor
         )
         {
-            //Return view with model state errors if model state is invalid.
             if (!ModelState.IsValid)
             {
                 return View(actor);
             }
-            //Add actor to database and redirect to index.
             await _service.AddAsync(actor);
             return RedirectToAction(nameof(Index));
         }
 
-        //Get: Actors/Details/{id}
+        //Get: Actors/Details/1
         public async Task<IActionResult> Details(int id)
         {
             var actorDetails = await _service.GetByIdAsync(id);
 
             if (actorDetails == null)
-            {
-                return View("Empty");
-            }
+                return View("NotFound");
             return View(actorDetails);
         }
 
-        //Get: Actors/Edit/{id}
+        //Get: Actors/Edit/1
         public async Task<IActionResult> Edit(int id)
         {
             var actorDetails = await _service.GetByIdAsync(id);
-
             if (actorDetails == null)
-            {
-                return View("Empty");
-            }
+                return View("NotFound");
             return View(actorDetails);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit(int id, Actor actor)
+        public async Task<IActionResult> Edit(
+            int id,
+            [Bind("Id,FirstName,LastName,ProfilePicture,Bio")] Actor actor
+        )
         {
-            //Return view with model state errors if model state is invalid.
             if (!ModelState.IsValid)
             {
                 return View(actor);
             }
-            //Add actor to database and redirect to index.
             await _service.UpdateAsync(id, actor);
-
-            //Return to details page.
-            var actorDetails = await _service.GetByIdAsync(id);
-            return RedirectToAction(nameof(Details), new { id = id });
+            return RedirectToAction(nameof(Index));
         }
 
-        //Get: Actors/Delete/{id}
+        //Get: Actors/Delete/1
         public async Task<IActionResult> Delete(int id)
         {
             var actorDetails = await _service.GetByIdAsync(id);
-
             if (actorDetails == null)
-            {
-                return View("Not Found");
-            }
+                return View("NotFound");
             return View(actorDetails);
         }
 
-        //Delete: Actors/Delete/{id}
         [HttpPost, ActionName("Delete")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var actorDetails = await _service.GetByIdAsync(id);
-
             if (actorDetails == null)
-            {
-                return View("Not Found");
-            }
+                return View("NotFound");
+
             await _service.DeleteAsync(id);
             return RedirectToAction(nameof(Index));
         }
