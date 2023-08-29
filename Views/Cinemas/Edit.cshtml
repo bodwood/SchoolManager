@@ -1,0 +1,62 @@
+@model Cinema
+
+@{
+ViewData["Title"] = "Edit Cinema";
+}
+
+<div class="row text">
+ <div class="col-md-8 offset-2">
+  <p>
+  <h4 class="text-center">Edit @Model.Name</h4>
+  </p>
+  <div className="row">
+   <div class="col-md-8 offset-2">
+
+    <!--Form for editing a Cinema.-->
+    <form asp-action="Edit">
+     <div class="form-group text-center">
+      <img id="LogoPreview" class="border-info rounded-circle" style="max-width: 150px" />
+     </div>
+     <div class="form-group">
+      <label asp-for="Logo" class="control-label"></label>
+      <input asp-for="Logo" class="form-control" />
+      <span asp-validation-for="Logo" class="text-danger"></span>
+     </div>
+     <div class="form-group">
+      <label asp-for="Name" class="control-label"></label>
+      <input asp-for="Name" class="form-control" />
+      <span asp-validation-for="Name" class="text-danger"></span>
+     </div>
+     <div class="form-group">
+      <label asp-for="Bio" class="control-label"></label>
+      <input asp-for="Bio" class="form-control" />
+      <span asp-validation-for="Bio" class="text-danger"></span>
+     </div>
+     <div class="form-group">
+      <input type="submit" value="Save" class="btn btn-outline-success float-right" asp-route-id="@Model.Id" />
+      <a class="btn btn-outline-success float-right" asp-action="Index">Go Back</a>
+     </div>
+    </form>
+
+   </div>
+  </div>
+ </div>
+</div>
+
+<!--Shows preview of logo.-->
+@section Scripts{
+<script>
+
+ //Shows preview of logo picture even if error occurs.
+ $(document).ready(function () {
+  var output = document.getElementById('LogoPreview');
+  output.src = $("#Logo").val();
+ });
+
+ $("#Logo").on("change", function () {
+  var output = document.getElementById('LogoPreview');
+  output.src = $(this).val();
+ });
+
+</script>
+}

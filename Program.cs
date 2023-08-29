@@ -23,6 +23,7 @@ builder.Services.AddDbContext<AppDbContext>(
 //Creates a new instance of the ActorsService class and adds it to the container.
 builder.Services.AddScoped<IActorsService, ActorsService>();
 builder.Services.AddScoped<IProducersService, ProducersService>();
+builder.Services.AddScoped<ICinemasService, CinemasService>();
 
 var app = builder.Build();
 

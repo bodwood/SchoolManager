@@ -7,7 +7,7 @@ using SchoolManagerProject.Data.Base;
 
 namespace SchoolManagerProject.Models
 {
-    public class Actor:IEntityBase
+    public class Actor : IEntityBase
     {
         //unique id for each teacher
         [Key]
