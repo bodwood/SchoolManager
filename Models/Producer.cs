@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using SchoolManagerProject.Data.Base;
 
 namespace SchoolManagerProject.Models
 {
-    public class Producer
+    public class Producer:IEntityBase
     {
         //unique id for each teacher
         [Key]

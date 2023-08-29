@@ -22,6 +22,7 @@ builder.Services.AddDbContext<AppDbContext>(
 //Services Configuration (dependency injection)
 //Creates a new instance of the ActorsService class and adds it to the container.
 builder.Services.AddScoped<IActorsService, ActorsService>();
+builder.Services.AddScoped<IProducersService, ProducersService>();
 
 var app = builder.Build();
 

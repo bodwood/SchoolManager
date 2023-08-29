@@ -1,0 +1,67 @@
+@model Producer
+
+@{
+ViewData["Title"] = "Edit Producer";
+}
+
+<div class="row text">
+ <div class="col-md-8 offset-2">
+  <p>
+  <h4 class="text-center">Edit @Model.FirstName @Model.LastName</h4>
+  </p>
+  <div className="row">
+   <div class="col-md-8 offset-2">
+
+    <!--Form for editing a new Producer.-->
+    <form asp-action="Edit">
+     <div class="form-group text-center">
+      <img id="ProfilePicturePreview" class="border-info rounded-circle" style="max-width: 150px" />
+     </div>
+     <div class="form-group">
+      <label asp-for="ProfilePicture" class="control-label"></label>
+      <input asp-for="ProfilePicture" class="form-control" />
+      <span asp-validation-for="ProfilePicture" class="text-danger"></span>
+     </div>
+     <div class="form-group">
+      <label asp-for="FirstName" class="control-label"></label>
+      <input asp-for="FirstName" class="form-control" />
+      <span asp-validation-for="FirstName" class="text-danger"></span>
+     </div>
+     <div class="form-group">
+      <label asp-for="LastName" class="control-label"></label>
+      <input asp-for="LastName" class="form-control" />
+      <span asp-validation-for="LastName" class="text-danger"></span>
+     </div>
+     <div class="form-group">
+      <label asp-for="Bio" class="control-label"></label>
+      <input asp-for="Bio" class="form-control" />
+      <span asp-validation-for="Bio" class="text-danger"></span>
+     </div>
+     <div class="form-group">
+      <input type="submit" value="Save" class="btn btn-outline-success float-right" asp-route-id="@Model.Id" />
+      <a class="btn btn-outline-success float-right" asp-action="Index">Go Back</a>
+     </div>
+    </form>
+
+   </div>
+  </div>
+ </div>
+</div>
+
+<!--Shows preview of profile picture.-->
+@section Scripts{
+<script>
+
+ //Shows preview of profile picture even if error occurs.
+ $(document).ready(function () {
+  var output = document.getElementById('ProfilePicturePreview');
+  output.src = $("#ProfilePicture").val();
+ });
+
+ $("#ProfilePicture").on("change", function () {
+  var output = document.getElementById('ProfilePicturePreview');
+  output.src = $(this).val();
+ });
+
+</script>
+}
