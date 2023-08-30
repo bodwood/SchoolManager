@@ -63,6 +63,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWVzL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/Views/Movies/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWVzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/Views/Movies/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWVzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -93,6 +97,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/Views/Shared/NotFound.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL05vdEZvdW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/Views/Shared/_CreateItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19DcmVhdGVJdGVtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/bodie1/Desktop/SchoolManager.Solution/SchoolManagerProject/Views/Shared/_ValidationScriptsPartial.cshtml]
