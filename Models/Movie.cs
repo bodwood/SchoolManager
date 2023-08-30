@@ -5,10 +5,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 using SchoolManagerProject.Data;
+using SchoolManagerProject.Data.Base;
 
 namespace SchoolManagerProject.Models
 {
-    public class Movie
+    public class Movie : IEntityBase
     {
         //unique id for each teacher
         [Key]
